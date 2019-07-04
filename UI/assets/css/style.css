@@ -1233,8 +1233,8 @@ body {
     border: 1px solid gray;
     text-align: center;
     text-decoration: none;
-    color: #000;
-    font-size: 16px;
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
 }
 

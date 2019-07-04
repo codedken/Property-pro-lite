@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="Chibuzor Ojukwu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Post Property</title>
+</head>
+
+<body>
+    <div class="container-add-prop">
+        <div class="container-header">
+            <div class="nav">
+                <div class="hamburger-menu" id="menu">&#9776</div>
+            </div>
+            <h1>PropertyPro-<i>lite</i></h1>
+            <a href="" class="header-logout">Logout</a>
+        </div>
+        <div class="user-form">
+            <div class="user-menu active" id="user-menu">
+                <div class="menu-header">
+                </div>
+                <img class="user-image" src="assets/images/chibuzorphoto.png" alt="profile photo" />
+                <h3 id="user-name">Chibuzor Ojukwu</h3>
+                <div class=side-menu-list>
+                    <a class="side-bar-links" href="index.html"><i class="fa fa-home"></i>Home</a>
+                    <a class="side-bar-links" href="add-property.html"><i class="fa fa-upload"></i>Post a
+                        property</a>
+                        <a class="side-bar-links" href="all-properties.html"><i class="fa fa-building"></i>All properties</a>
+                    <a class="side-bar-links" href="user-profile-page.html"><i class="fa fa-user"></i>My Profile</a>
+                    <a class="side-bar-links" href="index.html"><i class="fa fa-power-off"></i>Logout</a>
+                </div>
+            </div>
+
+            <div class="post-property" id="post-property">
+                <h2 id="post-property-title">Post a property</h2>
+                <hr>
+                <div class="prop-location">
+                    <div class="property-rows">
+                        <h3 class="property-details">Country </h3>
+                        <select class="select-details" id="select-country">
+                            <option value="0">Select Country</option>
+                            <option value="1">Gabon</option>
+                            <option value="2">Mali</option>
+                            <option value="3">Morrocco</option>
+                            <option value="4">Nigeria</option>
+                            <option value="5">Niger</option>
+                        </select>
+                    </div>
+                    <div class="property-rows">
+                        <h3 class="property-details">State </h3>
+                        <select class="select-details" id="select-state">
+                            <option value="0">Select State</option>
+                            <option value="1">Lagos</option>
+                            <option value="2">Oyo</option>
+                            <option value="3">Osun</option>
+                            <option value="4">Imo</option>
+                            <option value="5">Kwara</option>
+                        </select>
+                    </div>
+                    <div class="property-rows">
+                        <h3 class="property-details">L.G.A </h3>
+                        <select class="select-details" id="select-lga">
+                            <option value="0">Select LGA</option>
+                            <option value="1">Alimosho</option>
+                            <option value="2">Amuwo-Odofin</option>
+                            <option value="3">Eti-Osa</option>
+                        </select>
+                    </div>
+
+                    <div class="property-rows">
+                        <h3 class="property-details">Area </h3>
+                        <select class="select-details" id="select-area">
+                            <option value="0">Select Area</option>
+                            <option value="1">Satellite Town</option>
+                            <option value="2">Navy Town</option>
+                            <option value="3">Okokomaiko</option>
+                        </select>
+                    </div>
+                    <div class="property-rows">
+                        <h3 class="property-details">Street </h3>
+                        <input class="select-details street-input" type="text" name="street"
+                            placeholder="e.g 23, Peter Imemesi street">
+                    </div>
+                    <div class="property-rows">
+                        <h3 class="property-details">Price </h3>
+                        <div class="price-and-currency">
+                            <input class="select-details" id="price-input" type="text" name="price"
+                                placeholder="e.g 3000, no comma">
+                            <select class="select-details" id="select-currency">
+                                <option value="0">Currency</option>
+                                <option value="1">NGN</option>
+                                <option value="2">USD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="property-rows">
+                        <h3 class="property-details">Duration </h3>
+                        <div class="duration-and-purpose">
+                            <select class="select-details" id="select-duration">
+                                <option value="0">duration</option>
+                                <option value="1">per month</option>
+                                <option value="2">every 6 months</option>
+                                <option value="3">per year</option>
+                                <option value="3">every two years</option>
+                            </select>
+                            <select class="select-details" id="select-purpose">
+                                <option value="0">Purpose</option>
+                                <option value="1">For rent</option>
+                                <option value="2">For sale</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="prop-info">
+                        <h3 class="property-details">Property Description </h3>
+                        <textarea name="prop-info" class="prop-desc-input"
+                            placeholder="e.g 2 bedroom flat with 2 toilets, 1 store and a gateman's house"></textarea>
+                    </div>
+                    <div class="prop-image-upload">
+                        <h3 class="property-details">Upload property photos </h3>
+                        <div class="prop-image-select">
+                            <input class="pic-prop-image" type="file" name="pic" accept="image/*">
+                            <input class="pic-upload-btn" id="pic-upload-btn" type="submit" name="upload-prop-photo"
+                                id="prop-photo">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">Designed by CodedKen &copy; 2019</footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
