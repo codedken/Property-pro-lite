@@ -801,7 +801,7 @@ body {
     width: 100%;
 }
 
-.menu-links {
+.user-menu {
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -1023,9 +1023,9 @@ body {
         margin: 0;
         padding: 0;
     }
-    #menu-links {
+    .user-menu {
         display: none;
-        width: 650px;
+        width: 250px;
         z-index: 1;
         transition: 0.5s;
     }
@@ -1538,6 +1538,7 @@ body {
     font-weight: 500;
     color: #000;
 }
+
 
 .prop-crud-actions {
     padding: 0.5rem 0;
